@@ -4,7 +4,8 @@
     border: 1px solid #CCCCCC;
 }
 
-.col-md-3 .product-img {
+.col-md-3 .product-img,
+.col-md-6 .product-img{
     width: 100%;
     opacity: 0.6;
 }
@@ -13,12 +14,18 @@
     opacity: 1;
 }
 
+.col-md-3 .btn-outline-primary {
+    width: 100%;
+    height: 100%;
+}
+
 .col-md-12 {
     height: 400px;
     background-color: #CCCCCC;
 }
 
 .col-md-12 .banner {
+    padding: 102px 356.82px 106px 357px;
     height: 192px;
     width: 411.16px;
     color: #FFFFFF;
@@ -26,7 +33,12 @@
     font-size: 100px;
     font-weight: 300;
     line-height: 96px;
-    text-align: center;
+}
+
+.btn-primary {
+    height: 40px;
+    width: 151.39px;
+    background-color: #000000;
 }
 
 #terms {
@@ -34,10 +46,7 @@
 }
 
 .dayNumber {
-    margin-top: 63px;
-    margin-bottom: 75px;
-    height: 144px;
-    width: 282px;
+    padding: 63px 0px 75px 0px;
     color: #DDDDDD;
     font-family: "Sephora Serif";
     font-size: 120px;
@@ -47,3 +56,21 @@
     line-height: 144px;
     text-align: center;
 }
+
+.modal-grid {
+    height: 450px;
+    width: 450px;
+}
+
+.modal-grid .product-img {
+    width:100%;
+}
+
+.form-control-plaintext {
+    height: 40px;
+    width: 118.82px;
+    border: 1px solid #999999;
+    background-color: #FFFFFF;
+
+}
+
