@@ -105,7 +105,7 @@
                             <div class="form-group">
                                 <input type="text" readonly class="form-control-plaintext" id="giftCode" value="AC8F21">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-primary" type="button">Go!</button>
+                                    <button class="btn btn-primary" type="button" onclick="applyCode()" id="applyCodeBtn">APPLY CODE</button>
                             </span>
                             </div>
                         </form>
@@ -139,6 +139,16 @@
     setInterval(function() {
         setCountdownTimer();
     }, 1000);
+
+    function applyCode() {
+        var button = document.getElementById('applyCodeBtn');
+        button.innerText = "APPLYING...";
+        setTimeout(function() {
+            button.innerText = "APPLIED";
+            button.setAttribute("disabled", "");
+        }, 500);
+
+    }
 
 </script>
 </body>

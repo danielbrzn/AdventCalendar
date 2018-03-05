@@ -41,6 +41,12 @@
     background-color: #000000;
 }
 
+.btn-primary:hover,
+.btn-primary:disabled {
+    opacity: 0.8;
+    background-color: #000000;
+}
+
 #terms {
     border: none;
 }
