@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="sephora.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs">
+            <img class="banner" src="res/mobileBanner.png"/>
+        </div>
+    </div>
+    <br/>
+    <div class="row">
+        <div class="col-xs mx-auto">
+            <button class="btn btn-outline-primary" id="activeDay" data-toggle="modal" data-target="#giftModal">
+                <span class="dayNumber text-center activeGift">6</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="row giftRow">
+        <div class="col-xs-6">
+            <img class="product-img" src="https://static-reg.lximg.com/images/pictures/55018/closeup_72d591d5cbc78fb8be5f1bddaa52717a2752d8f7_1507088695_28770_Tarte_WEB.jpg">
+        </div>
+        <div class="col-xs-6">
+            <img class="product-img" src="https://static-reg.lximg.com/images/pictures/55018/closeup_72d591d5cbc78fb8be5f1bddaa52717a2752d8f7_1507088695_28770_Tarte_WEB.jpg">
+        </div>
+    </div>
+
+    <div class="row giftRow">
+        <div class="col-xs-6">
+            <img class="product-img" src="https://static-reg.lximg.com/images/pictures/55018/closeup_72d591d5cbc78fb8be5f1bddaa52717a2752d8f7_1507088695_28770_Tarte_WEB.jpg">
+        </div>
+        <div class="col-xs-6">
+            <img class="product-img" src="https://static-reg.lximg.com/images/pictures/55018/closeup_72d591d5cbc78fb8be5f1bddaa52717a2752d8f7_1507088695_28770_Tarte_WEB.jpg">
+        </div>
+    </div>
+
+    <div class="row giftRow">
+        <div class="col-xs-6">
+            <img class="product-img" src="https://static-reg.lximg.com/images/pictures/55018/closeup_72d591d5cbc78fb8be5f1bddaa52717a2752d8f7_1507088695_28770_Tarte_WEB.jpg">
+        </div>
+        <div class="col-xs-6">
+            <button class="btn btn-outline-primary" id="activeDaySmall" data-toggle="modal" data-target="#giftModal">
+                <span class="dayNumber text-center">6</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="row giftRow">
+        <div class="col-xs-6">
+            <p class="dayNumber text-center">7</p>
+        </div>
+        <div class="col-xs-6">
+            <p class="dayNumber text-center">8</p>
+        </div>
+    </div>
+
+    <br/>
+
+    <div class="row giftRow">
+        <div class="col-xs" id="terms">
+        <p><strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</strong></p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="giftModal" tabindex="-1" role="dialog" aria-labelledby="giftModal" aria-hidden="true">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                <div class="col-xs modal-grid-mobile">
+                    <button type="button" class="close float-right" data-dismiss="modal" aria-label="Close" >
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <img class="product-img" src="https://static-reg.lximg.com/images/pictures/55018/closeup_72d591d5cbc78fb8be5f1bddaa52717a2752d8f7_1507088695_28770_Tarte_WEB.jpg">
+                </div>
+                </div>
+                <div class="row">
+                <div class="col-xs modal-grid text-center">
+                    <h3>Gift of the Day</h3>
+                    <p>expires in</p>
+                    <p id="countdownTimer"></p>
+                    <hr />
+                    <div><strong>Supergoop!</strong></div>
+                    <p>Everyday Sunscreen with Cellular Response Technology SPF 50 (0.1 fl.oz./3ml)</p>
+                    <div><strong>Redeem with a minimum spend of $XXX.XXX</strong></div>
+                    <p>Inspired by the famous burlesque, Lola Frost, this is an intensely deep, plum red lipstick with a touch of pearl metallic finish.</p>
+
+                    <div class="input-group justify-content-center mb-3">
+                        <input type="text" readonly class="form-control-plaintext" id="giftCode" value="AC8F21">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" onclick="applyCode()" id="applyCodeBtn">APPLY CODE</button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <p>*Receive a Lip + Cheek Pencil in Sin (2.5g) when you purchase a minimum of PHP2,000 [min amount of purchase] (excluding possible costs of delivery). Offer valid once online at sephora.ph only from 4 Dec 2016 (12am PHT) to 4 Dec 2016 (11:59pm PHT) while stocks last.</p>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script>
+    $(document).on("click", "#activeDay, #activeDaySmall", function() {
+        $('#activeDay').html("<img class=\"product-img\" src=\"https://static-reg.lximg.com/images/pictures/55018/closeup_72d591d5cbc78fb8be5f1bddaa52717a2752d8f7_1507088695_28770_Tarte_WEB.jpg\">");
+        $('#activeDaySmall').html("<img class=\"product-img\" src=\"https://static-reg.lximg.com/images/pictures/55018/closeup_72d591d5cbc78fb8be5f1bddaa52717a2752d8f7_1507088695_28770_Tarte_WEB.jpg\">");
+    });
+
+    function setCountdownTimer() {
+        var date = new Date();
+        date.setHours(24, 0, 0, 0);
+        var diff = date.getTime() - new Date().getTime();
+
+        var seconds = Math.floor((diff / 1000) % 60);
+        var minutes = Math.floor((diff / (1000 * 60)) % 60);
+        var hours = Math.floor(diff / (1000 * 60 * 60));
+
+        document.getElementById('countdownTimer').innerHTML = hours + "h : " + minutes + "m : " + seconds + "s";
+    }
+
+    setInterval(function() {
+        setCountdownTimer();
+    }, 1000);
+
+    function applyCode() {
+        var button = document.getElementById('applyCodeBtn');
+        button.innerText = "APPLYING...";
+        setTimeout(function() {
+            button.innerText = "APPLIED";
+            button.setAttribute("disabled", "");
+        }, 500);
+
+    }
+
+</script>
+</body>
+</html>
