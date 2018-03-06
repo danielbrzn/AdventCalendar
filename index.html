@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="sephora.css">
 </head>
 <body>
+
 <div class="container">
     <div class="row">
         <div class="col-md-12">
@@ -32,32 +33,43 @@
     <div class="row">
         <div class="col-md-3">
             <img class="product-img" src="https://static-reg.lximg.com/images/pictures/55018/closeup_72d591d5cbc78fb8be5f1bddaa52717a2752d8f7_1507088695_28770_Tarte_WEB.jpg">
-
         </div>
         <div class="col-md-3">
-            <button type="button" class="btn btn-outline-primary" id="activeDay" data-toggle="modal" data-target="#giftModal">
-                <p class="dayNumber" >6</p>
+            <button class="btn btn-block btn-outline-primary gridButton" id="activeDay" data-toggle="modal" data-target="#giftModal">
+               6
             </button>
         </div>
         <div class="col-md-3">
-            <p class="dayNumber">7</p>
+            <button class="btn btn-block btn-outline-primary gridButton" disabled>
+                7
+            </button>
         </div>
         <div class="col-md-3">
-            <p class="dayNumber">8</p>
+            <button class="btn btn-block btn-outline-primary gridButton" disabled>
+                8
+            </button>
         </div>
     </div>
     <div class="row">
         <div class="col-md-3">
-            <p class="dayNumber">9</p>
+            <button class="btn btn-block btn-outline-primary gridButton" disabled>
+                9
+            </button>
         </div>
         <div class="col-md-3">
-            <p class="dayNumber">10</p>
+            <button class="btn btn-block btn-outline-primary gridButton" disabled>
+                10
+            </button>
         </div>
         <div class="col-md-3">
-            <p class="dayNumber">11</p>
+            <button class="btn btn-block btn-outline-primary gridButton" disabled>
+                11
+            </button>
         </div>
         <div class="col-md-3">
-            <p class="dayNumber">12</p>
+            <button class="btn btn-block btn-outline-primary gridButton" disabled>
+                12
+            </button>
         </div>
     </div>
     <br/>
@@ -83,7 +95,6 @@
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="giftModalLabel">Modal title</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -92,7 +103,7 @@
                     <div class="col-md modal-grid">
                         <img class="product-img" src="https://static-reg.lximg.com/images/pictures/55018/closeup_72d591d5cbc78fb8be5f1bddaa52717a2752d8f7_1507088695_28770_Tarte_WEB.jpg">
                     </div>
-                    <div class="col-md modal-grid">
+                    <div class="col-md modal-grid text-center">
                         <h3>Gift of the Day</h3>
                         <p>expires in</p>
                         <p id="countdownTimer"></p>
@@ -101,7 +112,7 @@
                         <p>Everyday Sunscreen with Cellular Response Technology SPF 50 (0.1 fl.oz./3ml)</p>
                         <div><strong>Redeem with a minimum spend of $XXX.XXX</strong></div>
                         <p>Inspired by the famous burlesque, Lola Frost, this is an intensely deep, plum red lipstick with a touch of pearl metallic finish.</p>
-                        <form class="form-inline">
+                        <form class="form-inline justify-content-center">
                             <div class="form-group">
                                 <input type="text" readonly class="form-control-plaintext" id="giftCode" value="AC8F21">
                                 <span class="input-group-btn">
@@ -121,8 +132,9 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script>
         $(document).on("click", "#activeDay", function() {
+            $('#activeDay').addClass("no-padding");
             $('#activeDay').html("<img class=\"product-img\" src=\"https://static-reg.lximg.com/images/pictures/55018/closeup_72d591d5cbc78fb8be5f1bddaa52717a2752d8f7_1507088695_28770_Tarte_WEB.jpg\">");
-        })
+        });
 
     function setCountdownTimer() {
         var date = new Date();
