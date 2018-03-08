@@ -5,106 +5,124 @@
     padding-right: 0 !important;
     padding-left: 0 !important;
 }
-
 .btn-outline-primary {
     border-color: #FFFFFF !important;
     color: #000000 !important;
-
 }
-
-.col-xs .activeGift {
-    height: 353px;
-    width: 353px;
+.activeDay {
+    height: 354px;
+    width: 354px;
     border: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.col-xs .banner {
+.mobileBanner {
     width: 100%;
 }
-
 .giftRow {
     justify-content: center;
 }
-
 .col-xs-6 {
     height: 177px;
     width: 177px;
     border: 1px solid #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.col-xs-6 .product-img,
-.col-md-3 .product-img,
-.col-md-6 .product-img,
-.col-xs #activeDay .product-img {
+.col-xs-6 .product-img, .col-md-3 .product-img, .col-md-6 .product-img, .col-xs #activeDay .product-img {
     width: 100%;
     opacity: 0.6;
 }
-
 .col-md-3 .product-img-active {
     opacity: 1;
 }
-
 .col-md-12 {
     height: 400px;
     background-color: #CCCCCC;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-.col-md-12 .banner {
-    padding: 102px 356.82px 106px 357px;
+.banner {
     height: 192px;
     width: 411.16px;
     color: #FFFFFF;
-    font-family: "Sephora Serif";
     font-size: 100px;
     font-weight: 300;
     line-height: 96px;
+    font-family: 'Playfair Display';
+    text-align: center;
 }
-
-.btn-primary:hover,
-.btn-primary:disabled {
+.btn-primary:hover, .btn-primary:disabled {
     opacity: 0.8;
     background-color: #000000;
 }
-
-#terms {
-    border: none;
+.btn:disabled {
+    opacity: 0.5;
 }
-
 .gridButton {
     color: #333;
-    font-family: "Sephora Serif";
-    font-size: 120px;
+    font-family: serif;
+    font-size: 150px;
     font-style: italic;
     font-weight: 300;
     letter-spacing: 2px;
     line-height: 144px;
     text-align: center;
+}
+.gridFill {
     padding: 63px 0 75px 0;
 }
-
+.gridButtonMobile {
+    color: #DDDDDD;
+    font-family: serif;
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 300;
+    letter-spacing: 1px;
+    line-height: 84px;
+    text-align: center;
+}
 .modal-grid {
     height: auto;
     width: 450px;
 }
-
 .modal-grid-mobile {
     height: 353px;
     width: 353px;
 }
-
-.modal-grid .product-img,
-.modal-grid-mobile .product-img {
+.modal-grid .product-img, .modal-grid-mobile .product-img {
     width:100%;
 }
-
-.form-control-plaintext {
-    height: 40px;
-    width: 118.82px;
-    border: 1px solid #999999;
+#giftCode {
     background-color: #FFFFFF;
-
 }
-
 .no-padding {
     padding: 0 0 0 0;
+}
+.terms {
+    font-size: 12px;
+    height: 120px;
+    width: 354px;
+    font-family: 'Source Sans Pro';
+}
+.modal-mobile{
+    margin: 0 37px 0 37px;
+    font-size: 15px;
+    line-height: 17px;
+}
+.modal-terms {
+    color: #999999;
+    font-family: 'Playfair Display';
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 14px;
+}
+h2 {
+    font-family: 'Playfair Display';
+}
+p {
+    font-family: "Source Sans Pro";
 }
